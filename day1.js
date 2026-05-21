@@ -9,16 +9,6 @@ console.log(`My name is ${name},I am ${age} year old,Student: ${student}`);
 //2
 let temperature = 38;
 
-if (temperature>= 38) {
-    console.log("fever");
-} else if (temperature >= 36 && 37 >= temperature) {
-    console.log("normal");
-} else {
-    console.log("low");
-}
-
-let temperature = 38;
-
 if (temperature > 37) {
     console.log("fever");
 } else if (temperature >= 36 && temperature <= 37) {
@@ -40,7 +30,7 @@ let bill = 850;
 
 if (bill > 1000) {
     console.log("20% discount");
-} else if (bill >= 500 && bill <= 100) {
+} else if (bill >= 500 && bill <= 1000) {
     console.log("10% discount");
 } else {
     console.log("no discount");
@@ -49,7 +39,7 @@ if (bill > 1000) {
 //5
 const number = 5;
 
-for (let i = 1; i < 10; i++) {
+for (let i = 1; i <= 10; i++) {
   console.log(`${number} x ${i} = ${number * i}`);
 }
 
@@ -78,7 +68,26 @@ if (length < 6) {
 
 for (let i = 1; i <= 50; i++) {
     if (i % 3 == 0) {
-        continue
+        continue;
     }
     console.log(i);
+}
+
+//9
+
+let score = 72;
+
+if (score >= 90) {
+    console.log("GRADE A");
+} else if (score >= 75 && score <= 89) {
+    console.log("GRADE B");
+} else if (score >= 60 && score <= 74) {
+    console.log("GRADE C");
+} else {
+    console.log("GRADE F");
+}
+
+//10
+for (let i = 1; i <= 5; i++) {
+    console.log("*".repeat(i));
 }
