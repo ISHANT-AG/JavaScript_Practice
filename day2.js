@@ -64,13 +64,8 @@ console.log(status);
 //10
 let ages = [15, 22, 17, 30, 14, 25];
 
-// step 1 - filter adults
-let adults = ages.filter(a => ___);
-
-// step 2 - get sum using reduce
-let sum = adults.reduce((acc, a) => ___, 0);
-
-// step 3 - divide sum by count
-let average = sum / ___;
+let adults = ages.filter(a => a >= 18);
+let sum = adults.reduce((acc, a) => acc + a, 0); 
+let average = sum / adults.length;              
 
 console.log(average);
