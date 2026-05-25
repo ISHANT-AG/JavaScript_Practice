@@ -70,7 +70,7 @@ students.map(({ name, marks }) => {
 //10
 
 function sum(...nums) {
-    return nums.reduce((acc, n) => acc + n, 0);
+    return nums.reduce(acc, n) => acc + n, 0);
 }
 
 console.log(sum(1, 2, 3));
